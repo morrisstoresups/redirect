@@ -1,17 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Redirecting to email...</title>
-    <script type="text/javascript">
-        window.onload = function() {
-            window.location.href = "mailto:store4401@theupsstore.com?subject=Print%20Order&body=[Buy%20500%20Standard%20Business%20Cards,%20Get%20500%20Free]%0AStandard%20business%20cards%20are%2014PT%20thickness%20-%20please%20select%20Gloss%20Coated%20on%20FRONT%20SIDE%20or%20BOTH%20SIDES.%20Attach%20any%20artwork%20you%20have%20to%20this%20email,%20or%20provide%20us%20with%20instructions%20and%20we%20will%20happily%20set%20up%20your%20design;%20design%20charges%20will%20apply.";
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy 500 Business Cards</title>
+    <style>
+        body {
+            background-color: #FED22E;
+            font-family: Arial, sans-serif;
         }
-    </script>
+        .container {
+            padding: 20px;
+        }
+        .header {
+            background-color: #000;
+            color: #FED22E;
+            padding: 10px;
+            text-align: center;
+        }
+        .instructions {
+            margin-top: 20px;
+            color: #000;
+        }
+        .button-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .email-button {
+            background-color: #000;
+            color: #FED22E;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .email-button:hover {
+            background-color: #333;
+        }
+    </style>
 </head>
 <body>
-    If you don't get redirected automatically, you should
-    <a href="mailto:store4401@theupsstore.com?subject=Print%20Order&body=[Buy%20500%20Standard%20Business%20Cards,%20Get%20500%20Free]%0AStandard%20business%20cards%20are%2014PT%20thickness%20-%20please%20select%20Gloss%20Coated%20on%20FRONT%20SIDE%20or%20BOTH%20SIDES.%20Attach%20any%20artwork%20you%20have%20to%20this%20email,%20or%20provide%20us%20with%20instructions%20and%20we%20will%20happily%20set%20up%20your%20design;%20design%20charges%20will%20apply.">click this link</a>.
+    <div class="container">
+        <div class="header">
+            <h1>Buy 500 Standard Business Cards, Get 500 Free</h1>
+        </div>
+        <div class="instructions">
+            <p>Standard business cards are 14PT thickness - please select Gloss Coated on FRONT SIDE or BOTH SIDES.</p>
+            <p>Attach any artwork you have to this email, or provide us with instructions and we will happily set up your design; design charges will apply.</p>
+        </div>
+        <div class="button-container">
+            <button class="email-button" onclick="sendEmail()">Send Email</button>
+        </div>
+    </div>
+    <script>
+        function sendEmail() {
+            window.location.href = "mailto:store4401@theupsstore.com?subject=Print%20Order";
+        }
+    </script>
 </body>
 </html>
