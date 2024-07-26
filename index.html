@@ -8,19 +8,28 @@
         body {
             font-family: Arial, sans-serif;
             color: #000; /* Black text */
-            background-color: #F5F5F5; /* Light grey background for the entire page */
+            background: linear-gradient(135deg, #0052A5, #2CABE2); /* Bluish gradient background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             margin: 0;
-            padding: 0;
+        }
+        .container {
+            background-color: #F5F5F5; /* Light grey background for the content area */
+            width: 500px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
         .header {
             background-color: #FED22E; /* Yellow background */
             color: #000; /* Black text */
             padding: 15px;
-            text-align: center;
+            border-radius: 10px 10px 0 0;
         }
         .content {
-            background-color: #2CABE2; /* Light blue background */
-            color: #000; /* Black text */
             padding: 20px;
         }
         .instructions {
@@ -42,22 +51,21 @@
         .email-button:hover {
             background-color: #FFC107; /* Slightly darker yellow for hover */
         }
-        a {
-            color: #0052A5; /* Link color to match the UPS Store style */
-        }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>Special Promotion: Buy 500 Standard Business Cards, Get 500 Free!</h1>
-    </div>
-    <div class="content">
-        <div class="instructions">
-            <p>Standard business cards are 14PT thickness - please let us know whether you prefer Gloss Coating on FRONT SIDE or BOTH SIDES.</p>
-            <p>In your email, attach any artwork you may already have, or provide us with a description of what you'd like on your business cards and one of our artists will happily set up your design. An additional setup charge may apply.</p>
+    <div class="container">
+        <div class="header">
+            <h1>Special Promotion: Buy 500 Standard Business Cards, Get 500 Free!</h1>
         </div>
-        <div class="button-container">
-            <button class="email-button" onclick="sendEmail()">Email Our Team</button>
+        <div class="content">
+            <div class="instructions">
+                <p>Standard business cards are 14PT thickness - please let us know whether you prefer Gloss Coating on FRONT SIDE or BOTH SIDES.</p>
+                <p>In your email, attach any artwork you may already have, or provide us with a description of what you'd like on your business cards and one of our artists will happily set up your design. An additional setup charge may apply.</p>
+            </div>
+            <div class="button-container">
+                <button class="email-button" onclick="sendEmail()">Email Our Team</button>
+            </div>
         </div>
     </div>
     <script>
